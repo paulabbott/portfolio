@@ -3,48 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Projects — Paul Douglas Abbott</title>
     <style>
+        * { margin: 0; box-sizing: border-box; }
+        html, body { height: 100%; background: #fff; }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: clamp(16px, 4vw, 48px);
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        a {
+            font-family: Georgia, serif;
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
+            color: #000;
+            text-decoration: none;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+        a:hover {
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    
-    <div class="project">
-        <h2>64 Bits of Shared Space</h2>
-        <img width="300" src="https://paulabbott.github.io/portfolio/photos/64_bits_of_shared_space/64bitsofsharedspace-3.jpg" alt="64 Bits of Shared Space project image">
-    </div>
-    
-    <div class="project">
-        <h2><a href="40-bytes-of-shared-space.html">40 Bytes of Shared Space</a></h2>
-        <a href="40-bytes-of-shared-space.html"><img width="300" src="https://paulabbott.github.io/portfolio/photos/40_bytes_of_shared_space/image1.jpg" alt="40 Bytes of Shared Space project image"></a>
-    </div>
-
-    <div class="project">
-        <h2>Personal Transformation Matrix</h2>
-        <img width="300" src="https://paulabbott.github.io/portfolio/photos/personal_transformation_matrix/image1.png" alt="Personal Transformation Matrix project image"><br />
-        <a class="demo-link" target="_blank" href="https://paulabbott.github.io/personal-rotation-matrix/">[Demo]</a>
-    </div>
-
-    <div class="project">
-        <h2><a href="twistyface.html">Twistyface (working title)</a></h2>
-        <p>A gesture-controlled performance piece. Your face, broken into squares. Pinch to rotate. Each rotation distorts the image — and the sound.</p>
-        <a href="twistyface.html">View project →</a>
-    </div>
-    
-    <div class="project">
-        <h2><a href="meshy.html">Mesh Network</a></h2>
-        <a href="meshy.html">View project →</a>
-    </div>
-
-
+    <nav>
+        <a href="https://control-drawings.pauldouglasabbott.com/">Control Drawings</a>
+        <a href="https://personal-transformation-matrix.pauldouglasabbott.com/clientpage/">Personal Transformation Matrix</a>
+    </nav>
 </body>
 </html>
-
